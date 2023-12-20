@@ -6,6 +6,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 //#endregion
+
 //#region shared
 
 import { HeaderComponent } from './components/shared/header/header.component';
