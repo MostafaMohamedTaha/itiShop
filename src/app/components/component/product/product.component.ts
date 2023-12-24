@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StoreData } from '../../../viewModels/store-data';
 
 @Component({
   selector: 'app-product',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
+  storeInfo!:StoreData
 
+  constructor() {
+    this.storeInfo=new StoreData('iti store','https://picsum.photos/400/440',4,['alex','cairo','mansoura'])
+    
+  }
 }

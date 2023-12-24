@@ -15,8 +15,14 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { HomeComponent } from './components/component/home/home.component';
 import { ProductComponent } from './components/component/product/product.component';
+import { NgIconsModule } from '@ng-icons/core';
+import { bootstrapCart4, bootstrapInfoCircleFill, bootstrapTrash3 } from '@ng-icons/bootstrap-icons';
+import { ProductlistComponent } from './components/component/order/productlist/productlist.component';
 //#endregion
 
+//#region icons
+
+//#endregion
 @NgModule({
   declarations: [
     //#region default 
@@ -27,7 +33,8 @@ import { ProductComponent } from './components/component/product/product.compone
     FooterComponent,
          SidebarComponent,
          HomeComponent,
-         ProductComponent
+         ProductComponent,
+         ProductlistComponent
     //#endregion
   ],
   imports: [
@@ -36,6 +43,10 @@ import { ProductComponent } from './components/component/product/product.compone
     BrowserModule,
     AppRoutingModule
     //#endregion
+    //#region icons
+    ,
+    NgIconsModule.withIcons({ bootstrapCart4, bootstrapTrash3,bootstrapInfoCircleFill }),
+    //#endregion    
   ],
   providers: [
     //#region default
